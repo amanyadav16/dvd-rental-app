@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { providePrimeNG } from 'primeng/config';
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
+import { environment } from '../environments/environment.local';
 
 const BlueAura = definePreset(Aura, {
   semantic: {
@@ -36,7 +37,7 @@ export const appConfig: ApplicationConfig = {
           darkModeSelector: 'none',
         },
       },
-      license: 'eyJpZCI6IjQ0NDA1MWZiLTNmNDgtNDE4ZC1iNzRkLTdhY2NjM2NkOWJjZSIsInByb2R1Y3QiOiJwcmltZXVpIiwidGllciI6ImNvbW11bml0eSIsInR5cGUiOiJkZXYiLCJpYXQiOjE3OTUwMDcyMjAsImV4cCI6MTgyNjU0MzIyMH0.21naCjyS18vTVD1u08UOnEKPJaMcjbyUTuBhzAuPMRUuafeaHGrKoFU6gACvPdWDeNBqTKe17f26dWg_h8rnBw'
+      license: environment.primeUILicense,
    }),
   ]
 };
