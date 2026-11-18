@@ -1,3 +1,12 @@
 <main>
   <h1>Hello World Aman &amp; Neha!</h1>
+  <button pButton>Check</button>
+  <p-select
+    [options]="cities"
+    [ngModel]="selectedCity()"
+    (ngModelChange)="selectedCity.set($event)"
+    optionLabel="name"
+    placeholder="Select a city"
+    ariaLabel="Select a city"
+  />
 </main>
